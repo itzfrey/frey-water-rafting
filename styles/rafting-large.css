@@ -1,0 +1,23 @@
+/* ============================================================
+   RAFTING — LARGE SCREEN OVERRIDES (≥768px)
+   ============================================================ */
+
+@media (min-width: 768px) {
+  /* Nav always visible */
+  .navigation { display: flex !important; }
+  #menu { display: none !important; }
+
+  /* Trip section grid */
+  .trip-section { grid-template-columns: 1fr 1fr; }
+
+  /* Contact form two-column */
+  .wf1 { grid-template-columns: 1fr 1fr; }
+
+  /* Featurette rows */
+  .row.featurette { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 960px) {
+  /* Footer grid */
+  .site-footer { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
+}

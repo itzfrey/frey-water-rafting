@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frey Water Rafting — Unforgettable River Adventures</title>
+  <meta name="description" content="Frey Water Rafting offers world-class river adventures for all skill levels. Book your thrilling rafting trip in Abuja, Nigeria.">
+  <meta name="author" content="Godfrey Hogan Eyo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting-large.css">
+  <link rel="stylesheet" href="styles/rafting-larger.css">
+  <script src="scripts/rafting.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ═══ HEADER ══════════════════════════════════════════ -->
+  <header>
+    <img id="logo-img" src="images/rafting-logo.webp" alt="Frey Water Rafting" loading="lazy">
+    <button id="menu" aria-label="Open menu">
+      <span></span>
+    </button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-bg">
+        <img src="images/home-image2.webp" alt="" aria-hidden="true" loading="eager">
+      </div>
+      <div class="hero-content container">
+        <span class="section-label">Nigeria's Premier Rafting Company</span>
+        <h1>Chase the <span>Rapids.</span><br>Live the Adventure.</h1>
+        <p class="hero-sub">Expert-guided white-water rafting trips designed for every skill level — from first-timers to adrenaline veterans. Your river story starts here.</p>
+        <div class="hero-cta">
+          <a href="trips.html" class="btn btn-primary">
+            Explore Trips
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+          <a href="about.html" class="btn btn-ghost">Our Story</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>10K+</strong><span>Happy Rafters</span></div>
+        <div class="stat"><strong>6</strong><span>Unique Trips</span></div>
+        <div class="stat"><strong>100%</strong><span>Safety Record</span></div>
+        <div class="stat"><strong>8+</strong><span>Years Experience</span></div>
+      </div>
+    </section>
+
+    <!-- ═══ SUBSCRIBE ════════════════════════════════════════ -->
+    <section class="subscribe-section" aria-label="Newsletter signup">
+      <div class="container">
+        <h2>Don't Miss an Adventure</h2>
+        <p>Get early access to new trips, seasonal deals, and river updates.</p>
+        <form id="subscribe-form" novalidate>
+          <input type="text" id="name" placeholder="Your Name" required aria-label="Your name">
+          <input type="email" id="email" placeholder="Your Email" required aria-label="Your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ═══ TRIP PROMO BAND ══════════════════════════════════ -->
+    <div class="trip-section" aria-label="Adventure call-to-action">
+      <div class="trip-image-container">
+        <img src="images/river-exhilaration.jpg" alt="Rafters navigating white-water rapids" loading="lazy">
+      </div>
+      <div class="trip-text">
+        <p>Ready for an Exciting Adventure?</p>
+        <p>Check out our amazing rafting trips and book your next unforgettable river experience.</p>
+        <a href="trips.html" class="trip-button">
+          View All Adventures
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- ═══ OFFERINGS ════════════════════════════════════════ -->
+    <section class="offerings-section" aria-labelledby="offerings-heading">
+      <span class="section-label" style="display:block;text-align:center;margin-bottom:1rem">What We Offer</span>
+      <h2 class="offering-h2" id="offerings-heading">World-Class Experiences on the Water</h2>
+
+      <div class="row featurette reveal">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Thrilling Rapids Expedition</h2>
+          <p class="lead">Navigate challenging white-water rapids with our certified expert guides by your side. Purpose-built for experienced rafters who crave the rush of powerful, roaring currents.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/thrilling-rapids.webp" alt="Thrilling Rapids Expedition" class="featurette-image" width="500" height="500" loading="lazy">
+        </div>
+      </div>
+
+      <div class="row featurette reveal">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Family Fun Float</h2>
+          <p class="lead">Gentle, breathtaking float trips perfect for all ages. Glide through serene river sections, spot wildlife, and create lifelong memories with the people you love most.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/family-fun.webp" alt="Family Fun Float trip" class="featurette-image" width="500" height="500" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SOCIAL PROOF ═════════════════════════════════════ -->
+    <section class="social-proof" aria-labelledby="proof-heading">
+      <div class="proof-header reveal">
+        <span class="section-label">Testimonials</span>
+        <h2 id="proof-heading">10,000+ Adventurers Trust Frey Rafting</h2>
+        <p>See what our thrill-seekers and families are saying after their river experiences.</p>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial-card reveal">
+          <img src="images/profile.jpg" alt="Frey boy" class="avatar">
+          <p class="name">Frey Boy <span>Verified Rafter</span></p>
+          <blockquote>The rapids were epic, and the guides made it super safe and fun. 10/10 experience!</blockquote>
+        </div>
+        <div class="testimonial-card reveal">
+          <img src="images/irene-roberts.jpg" alt="Irene Roberts" class="avatar">
+          <p class="name">Irene Roberts <span>Family Adventurer</span></p>
+          <blockquote>Perfect for our family! Gentle floats and peaceful scenery — my kids absolutely loved it!</blockquote>
+        </div>
+        <div class="testimonial-card reveal">
+          <img src="images/caleb-stones.webp" alt="Anne Wallace" class="avatar">
+          <p class="name">Anne Wallace <span>Outdoor Enthusiast</span></p>
+          <blockquote>From beginning to end, the journey was breathtaking. Highly recommended to everyone!</blockquote>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <img src="images/rafting-logo.webp" alt="Frey Rafting Logo">
+    </div>
+    <div class="footer-contact">
+      <p>📞 Give Us a Call</p>
+      <a href="tel:+2349079770845">+234-907-977-0845</a>
+    </div>
+    <div class="footer-email">
+      <p>✉️ Send Us an Email</p>
+      <a href="mailto:hogan.godfrey1@gmail.com">hogan.godfrey1@gmail.com</a>
+    </div>
+    <div class="footer-social">
+      <p>Follow Us</p>
+      <div>
+        <a href="#" aria-label="Facebook"><img src="images/facebook_icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/itx_frey?igsh=Ym53MWpyd3EzMXE3" aria-label="Instagram"><img src="images/instagram_icon.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/godfrey-eyo-66aa3a251" aria-label="LinkedIn"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+        <a href="https://x.com/itzfrey" aria-label="Twitter/X"><img src="images/twitter_icon.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy;<span id="currentyear"></span> Godfrey Hogan Eyo · Abuja, Nigeria</p>
+      <p id="lastModified"></p>
+      <p>All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

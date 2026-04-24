@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Trips — Frey Water Rafting</title>
+  <meta name="description" content="Explore all Frey Water Rafting trips — from family floats to extreme white-water expeditions. Book your adventure today.">
+  <meta name="author" content="Godfrey Hogan Eyo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting-large.css">
+  <link rel="stylesheet" href="styles/rafting-larger.css">
+  <script src="scripts/rafting.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <img id="logo-img" src="images/rafting-logo.webp" alt="Frey Water Rafting" loading="lazy">
+    <button id="menu" aria-label="Open menu"><span></span></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="trip-main">
+
+    <section class="call-to-action">
+      <span class="section-label">All Adventures</span>
+      <h1>Are You Ready for an Unforgettable Rafting Experience?</h1>
+      <a href="contact.html" class="contact-button">
+        Book Your Trip Now
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </section>
+
+    <section class="trip-description" aria-label="Trip options">
+      <div class="trip-item reveal">
+        <img src="images/thrilling-rapids.webp" alt="Thrilling Rapids Expedition">
+        <h3>Thrilling Rapids Expedition</h3>
+        <p>Navigate mighty rapids with our expert guides. Adrenaline-pumping white-water for experienced rafters seeking their greatest challenge.</p>
+      </div>
+      <div class="trip-item reveal">
+        <img src="images/family-fun.webp" alt="Family Fun Float">
+        <h3>Family Fun Float</h3>
+        <p>A gentle, scenic river float built for all ages. Spot wildlife, enjoy breathtaking views, and create lasting memories together.</p>
+      </div>
+      <div class="trip-item reveal">
+        <img src="images/canyon-explorer.webp" alt="Canyon Explorer">
+        <h3>Canyon Explorer</h3>
+        <p>Journey through a majestic canyon — a blend of excitement and tranquility. Towering cliffs, lush greenery, and intermittent rapids await.</p>
+      </div>
+      <div class="trip-item reveal">
+        <img src="images/gentle-float.webp" alt="Gentle Float Trip">
+        <h3>Gentle Float Trip</h3>
+        <p>Perfect for relaxation-lovers and families with little ones. Minimal rapids, scenic waters, and optional swimming stops on a calm 2–4 hour escape.</p>
+      </div>
+      <div class="trip-item reveal">
+        <img src="images/river-exhilaration.webp" alt="River Exhilaration">
+        <h3>River Exhilaration</h3>
+        <p>The best of both worlds — Class II rapids mixed with tranquil floating stretches, crystal-clear pools, and stunning riverside views.</p>
+      </div>
+      <div class="trip-item reveal">
+        <img src="images/scenic-morning-float.webp" alt="Scenic Morning Float">
+        <h3>Scenic Morning Float</h3>
+        <p>Drift peacefully through breathtaking landscapes as the sun rises. Perfect for wildlife sightings and a calm, reflective nature experience.</p>
+      </div>
+    </section>
+
+    <section class="table-container" aria-label="Trip overview table">
+      <div id="tripTableContainer"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <img src="images/rafting-logo.webp" alt="Frey Rafting Logo">
+    </div>
+    <div class="footer-contact">
+      <p>📞 Give Us a Call</p>
+      <a href="tel:+2349079770845">+234-907-977-0845</a>
+    </div>
+    <div class="footer-email">
+      <p>✉️ Send Us an Email</p>
+      <a href="mailto:hogan.godfrey1@gmail.com">hogan.godfrey1@gmail.com</a>
+    </div>
+    <div class="footer-social">
+      <p>Follow Us</p>
+      <div>
+        <a href="#" aria-label="Facebook"><img src="images/facebook_icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/itx_frey?igsh=Ym53MWpyd3EzMXE3" aria-label="Instagram"><img src="images/instagram_icon.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/godfrey-eyo-66aa3a251" aria-label="LinkedIn"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+        <a href="https://x.com/itzfrey" aria-label="Twitter/X"><img src="images/twitter_icon.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy;<span id="currentyear"></span> Godfrey Hogan Eyo · Abuja, Nigeria</p>
+      <p id="lastModified"></p>
+      <p>All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

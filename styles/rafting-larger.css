@@ -1,0 +1,112 @@
+/* ============================================================
+   RAFTING — EXTRA-LARGE SCREEN OVERRIDES (≥1200px)
+   ============================================================ */
+
+@media (min-width: 1200px) {
+  .offerings-section { padding: 9rem 2rem; }
+  .hero-content { padding-left: calc((100vw - 1200px) / 2 + 2rem); }
+  .hero-stats   { padding-left: calc((100vw - 1200px) / 2 + 2rem); }
+}
+
+/* ─── MOBILE OVERRIDES (≤767px) ──────────────────────────── */
+@media (max-width: 767px) {
+  /* Header */
+  header { padding: 0 1rem; }
+
+  #menu {
+    display: flex !important;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: rgba(13,27,42,0.97);
+    backdrop-filter: blur(18px);
+    padding: 1.5rem 1rem 2rem;
+    gap: 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    z-index: 999;
+  }
+  .navigation.open { display: flex; }
+
+  .navigation li a {
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 1rem;
+    display: block;
+  }
+
+  /* Hero stats wrap */
+  .hero-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem 3rem;
+  }
+
+  /* Trip section stack */
+  .trip-section {
+    grid-template-columns: 1fr;
+  }
+  .trip-image-container {
+    height: 260px;
+  }
+  .trip-text {
+    padding: 2.5rem 1.5rem;
+    gap: 1rem;
+  }
+
+  /* Testimonials stack */
+  .testimonials { grid-template-columns: 1fr; }
+
+  /* Offerings featurette stack */
+  .row.featurette { grid-template-columns: 1fr; gap: 1.5rem; }
+  .row.featurette .order-md-2 { order: -1; }
+
+  /* Trips page */
+  .trip-description { grid-template-columns: 1fr; }
+  .adventure-figure { grid-template-columns: repeat(2, 1fr); }
+  .adventure-figure figure:last-child { grid-column: 1 / -1; }
+
+  /* Footer stack */
+  .site-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .footer-copy {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+
+  /* Contact form single col on mobile */
+  .wf1 { grid-template-columns: 1fr; }
+  .company-info { grid-template-columns: 1fr; }
+}
+
+/* ─── TABLET (768–1023px) ─────────────────────────────────── */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .trip-description { grid-template-columns: repeat(2, 1fr); }
+  .adventure-figure { grid-template-columns: repeat(3, 1fr); }
+  .testimonials     { grid-template-columns: 1fr 1fr; }
+  .testimonials .testimonial-card:last-child { grid-column: 1 / -1; max-width: 420px; margin: 0 auto; }
+
+  .site-footer { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─── PRINT ───────────────────────────────────────────────── */
+@media print {
+  header, footer, #menu, .hero-cta, .subscribe-section { display: none !important; }
+  body { color: #000; background: #fff; }
+  a { color: #000; }
+}
+
+/* ─── REDUCED MOTION ──────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

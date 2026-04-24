@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Frey Water Rafting</title>
+  <meta name="description" content="Get in touch with Frey Water Rafting. Book a trip, ask questions, or send us a message.">
+  <meta name="author" content="Godfrey Hogan Eyo">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/rafting-large.css">
+  <link rel="stylesheet" href="styles/rafting-larger.css">
+  <script src="scripts/rafting.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <img id="logo-img" src="images/rafting-logo.webp" alt="Frey Water Rafting" loading="lazy">
+    <button id="menu" aria-label="Open menu"><span></span></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1 class="contact-h1">Contact Us</h1>
+
+    <section class="contact-section reveal">
+      <div class="company-info">
+        <h2>Company Details</h2>
+        <div class="address">
+          <p><strong>Address</strong></p>
+          <p>Jabi, 900108, Abuja, Federal Capital Territory</p>
+        </div>
+        <div class="phone">
+          <p><strong>Phone</strong></p>
+          <p>+234-816-118-1742 &nbsp;·&nbsp; +234-907-977-0845</p>
+        </div>
+        <div class="email">
+          <p><strong>Email</strong></p>
+          <p><a href="mailto:hogan.godfrey1@gmail.com" style="color:var(--teal-dark)">hogan.godfrey1@gmail.com</a></p>
+        </div>
+        <div>
+          <iframe title="Jabi, Abuja"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14753.842128350474!2d7.428692981295254!3d9.073199375328045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1689111962773!5m2!1sen!2sng"
+            width="300" height="250" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-form reveal">
+      <h3>Send Us a Message</h3>
+      <form method="get" action="#" class="wf1">
+        <label>First Name* <input type="text" name="fname" required autocomplete="given-name"></label>
+        <label>Last Name*  <input type="text" name="lname" required autocomplete="family-name"></label>
+        <label>Phone       <input type="tel" name="tel" placeholder="+234 000 000 0000" autocomplete="tel"></label>
+        <label>Email*      <input type="email" name="email" required placeholder="you@example.com" autocomplete="email"></label>
+        <label class="written-review">Comments or Questions
+          <textarea name="comments" id="comments" rows="4" placeholder="Tell us about your group size, preferred trip, or any questions…"></textarea>
+        </label>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <img src="images/rafting-logo.webp" alt="Frey Rafting Logo">
+    </div>
+    <div class="footer-contact">
+      <p>📞 Give Us a Call</p>
+      <a href="tel:+2349079770845">+234-907-977-0845</a>
+    </div>
+    <div class="footer-email">
+      <p>✉️ Send Us an Email</p>
+      <a href="mailto:hogan.godfrey1@gmail.com">hogan.godfrey1@gmail.com</a>
+    </div>
+    <div class="footer-social">
+      <p>Follow Us</p>
+      <div>
+        <a href="#" aria-label="Facebook"><img src="images/facebook_icon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/itx_frey?igsh=Ym53MWpyd3EzMXE3" aria-label="Instagram"><img src="images/instagram_icon.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/godfrey-eyo-66aa3a251" aria-label="LinkedIn"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+        <a href="https://x.com/itzfrey" aria-label="Twitter/X"><img src="images/twitter_icon.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy;<span id="currentyear"></span> Godfrey Hogan Eyo · Abuja, Nigeria</p>
+      <p id="lastModified"></p>
+      <p>All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
